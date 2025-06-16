@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.function-sheet {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.function-sheet h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  background-color: #917704;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.fb-timeline {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.fb-timeline table {
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+}
+
+.fb-timeline th, .fb-timeline td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-weight: bold;
+}
+
+.room-carnac-room {
+  color: #7a4c17;
+}
+
+.room-omer-room {
+  color: #1b611b;
+}
+
+.room-hibernia-room {
+  color: #0d5577;
+}
+
+.room-shannon-room {
+  color: #570b75;
+}
+
+.room-pfa-room {
+  color: #7a1929;
+  
+}
+
+.room-marker-suit-room {
+  background-color: #181603;
+  color:white;
+}
+
+.preset-tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #eee;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #ccc;
+}
+
+.preset-rooms {
+  margin-top: 0.5rem;
+}
+
+.room-tag {
+  display: inline-block;
+  background-color: #eee;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin: 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.room-tag:hover {
+  background-color: #ccc;
+}
+
+.room-tag.active {
+  background-color: #007bff;
+  color: white;
+}
+
+td .delete-btn{
+  width: 20px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #d11a2a;
+  transition: transform 0.1s ease;
+  width: 20px;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.preset-times {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.time-btn {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.time-btn:hover {
+  background-color: #ddd;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#openModalBtn{
+  font-weight: bold;
+  width: fit-content;
+margin-top: 10px;
+}
+
+.main-header {
+  background: linear-gradient(to right, #000000, #917704);
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.main-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  background-color: rgba(255, 255, 255, 0.733);
+  color: #000000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #e6f2ff;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
