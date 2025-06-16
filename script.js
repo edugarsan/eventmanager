@@ -249,6 +249,11 @@ function renderTimeline() {
   });
 }
 
+document.getElementById("menuToggle")?.addEventListener("click", () => {
+  const nav = document.getElementById("mainNav");
+  nav.classList.toggle("show");
+});
+
 
 
 
